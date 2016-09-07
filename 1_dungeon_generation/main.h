@@ -9,6 +9,7 @@
 
 void printMap(char** map);
 void generateDungeon();
-void addRoom(int x, int y, int width, int height);
+void drawCorridors(int *roomList, int numberOfRooms);
 int checkPlacement(int x, int y, int width, int height);
-void drawCorridors(int* roomList, int numberOfRooms);
+void addRoom(int x, int y, int width, int height);
+void printMap(char **map);
