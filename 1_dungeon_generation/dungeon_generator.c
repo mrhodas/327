@@ -12,9 +12,9 @@ int rows = 21;
 int cols = 80;
 
 int main(int argc, char **args) {
-    map = (char **) malloc(sizeof(char *) * rows);
-
     int i, j;
+
+    map = (char **) malloc(sizeof(char *) * rows);
 
     for (i = 0; i < rows; i++) {
         map[i] = (char *) malloc(sizeof(char) * cols);
