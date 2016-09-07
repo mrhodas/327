@@ -33,7 +33,7 @@ int main(int argc, char** args) {
 void generateDungeon(){
     int numberOfRooms;
 
-    for(numberOfRooms = 0; numberOfRooms < 2; numberOfRooms++) {
+    for(numberOfRooms = 0; numberOfRooms < 30; numberOfRooms++) {
 
         srand(time(NULL));
 
@@ -57,6 +57,10 @@ void generateDungeon(){
             }
         }
     }
+
+}
+
+void addRoom(int x, int y, int width, int height){
 
 }
 
