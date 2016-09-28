@@ -46,6 +46,22 @@ int dungeon_print()
 	return 0;
 }
 
+int print_hmap(){
+    int r, c;
+
+    for (r=0;r<DUNG_H;r++)
+    {
+        for (c=0;c<DUNG_W;c++)
+        {
+            // print dungeon cell on the dungeon
+            printf("%u ", hmap[r][c]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
 int dungeon_generate()
 {
 	int i, t, tmax = (1<<5); // max number of attempts to create rooms

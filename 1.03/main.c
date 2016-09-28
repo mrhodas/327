@@ -14,26 +14,25 @@ int nummon = 10;
 int nummonmax = 255;
 
 
-
 void init_dmap() {
+    p_row = rand() % DUNG_H;
+    p_col = rand() % DUNG_W;
+
+    dmap[p_row][p_col] = 95;
+}
+
+void create_distance_map(){
+    init_dmap();
+
     int r, c;
 
     for (r=0;r<DUNG_H;r++)
     {
         for (c=0;c<DUNG_W;c++)
         {
-            dmap[r][c] = '.';
+            dmap[r][c] = rand() % 52 + 72;
         }
     }
-}
-
-void create_distance_map(){
-    init_dmap();
-
-    p_row = rand() % DUNG_H;
-    p_col = rand() % DUNG_W;
-
-    dmap[p_row][p_col] = '@';
 
 }
 
@@ -46,10 +45,9 @@ void print_distance_map()
     {
         for (c=0;c<DUNG_W;c++)
         {
-            // print dungeon cell on the dungeon
-            putchar(dmap[r][c]);
+            printf("%c ", dmap[r][c]);
         }
-        putchar('\n');
+        printf("\n");
     }
 }
 
@@ -132,10 +130,13 @@ int main(int argc, char** argv)
 
 	printf("\nOriginal Dungeon:\n");
 	dungeon_print();
+    printf("\nHardness Map:\n");
+    print_hmap();
     printf("\nDistance Map:\n");
-
     create_distance_map();
     print_distance_map();
+
+
 
     if (savep)
 		dungeon_save();

@@ -8,7 +8,7 @@ char tmap[DUNG_H][DUNG_W];
 unsigned char hmap[DUNG_H][DUNG_W];
 
 /* distance map */
-char dmap[DUNG_H][DUNG_W];
+int dmap[DUNG_H][DUNG_W];
 
 /* player x position */
 int p_row;
@@ -27,6 +27,8 @@ int dungeon_load();
 
 /* save dungeon using --save <file> */
 int dungeon_save();
+
+int print_hmap();
 
 #endif
 
