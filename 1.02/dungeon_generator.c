@@ -5,13 +5,15 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
+#include <string.h>
 #include "main.h"
 
 char **map;
+int **hardness;
 int rows = 21;
 int cols = 80;
 
-int main(int argc, char **args) {
+int main(int argc, char **argv) {
     int i, j;
 
     map = (char **) malloc(sizeof(char *) * rows);
@@ -23,10 +25,80 @@ int main(int argc, char **args) {
         }
     }
 
-    generateDungeon();
+    srand(time(NULL));
+    hardness = (int **) malloc(sizeof(int *) * rows);
+
+    for (i = 0; i < rows; i++) {
+        hardness[i] = (char *) malloc(sizeof(int) * cols);
+        for (j = 0; j < cols; j++) {
+            hardness[i][j] = rand() % 266;
+        }
+    }
+
+    if(argc == 1) {
+        generateDungeon();
+    }
+
+    if(argc == 2){
+        if(!strcmp(argv[1], "--save")) {
+            generateDungeon();
+            save();
+        }
+        if(!strcmp(argv[1], "--load")) {
+            load();
+        }
+    }
+
+    if(argc == 3){
+        load();
+        save();
+    }
+
     printMap(map);
 
     return 0;
+}
+
+int save(){
+    FILE *f;
+    char title[6] = "RLG327";
+    int version = 0;
+    char *home = getenv("HOME");
+    strcat(home,"/.rlg327/");
+    f= fopen(home,"ab+");
+    if(!f){
+        printf("cant open file");
+        return 1;
+    }
+
+    fprintf(f, "%s", title);
+    fwrite((const void*) & version,sizeof(int),1, f);
+    int i,j;
+    for(i = 0; i < rows; i++){
+        for(j = 0; j < cols; j++){
+            fwrite((const void*) & hardness[i][j],sizeof(int),1, f);
+        }
+    }
+
+
+    fclose(f);
+
+
+}
+
+int load(){
+    FILE *f;
+    char title[6];
+    char version[4];
+    char rowMajor[1680];
+    char *home = getenv("HOME");
+    strcat(home,"/.rlg327/");
+    strcat(home,"Dungeon");
+    f= fopen(home,"r");
+    if(!f){
+        printf("cant open file");
+        return 1;
+    }
 }
 
 void generateDungeon() {

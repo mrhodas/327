@@ -1,2 +1,5 @@
+Assignment #2 - 9/14/2016
+-Working on saving dungon.
+
 Assignment #1 - 9/7/2016
 -Made dungeon generator that connects by corners.
