@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CPP_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/dijkstra.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/corridor.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/point.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/._save_files" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/point.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/save_files/2.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/save_files/._6.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/save_files/5.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/save_files/._smile.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/save_files/._9.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/save_files/7.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/save_files/._0.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/save_files/welldone.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/save_files/hello.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/save_files/._welldone.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/save_files/._3.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/save_files/1.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/save_files/smile.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/save_files/._5.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/save_files/4.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/save_files/._hello.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/save_files/._8.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/save_files/._7.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/save_files/6.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/save_files/._4.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/save_files/9.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/save_files/8.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/save_files/._1.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/save_files/0.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/save_files/._2.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/save_files/3.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/corridor.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/main.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/heap.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/dungeon.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/heap.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/dungeon.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/room.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/character.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/core.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/room.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/character.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/debug.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/dijkstra.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/._corridor.c" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/debug.c" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="Header Search Paths">
+        <CLASSES>
+          <root url="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/4.9.3/include-fixed" />
+          <root url="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/4.9.3/include" />
+          <root url="file://C:/cygwin64/usr/include" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/4.9.3/include-fixed" />
+          <root url="file://C:/cygwin64/lib/gcc/x86_64-pc-cygwin/4.9.3/include" />
+          <root url="file://C:/cygwin64/usr/include" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>
