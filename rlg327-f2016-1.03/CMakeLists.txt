@@ -31,6 +31,6 @@ set(SOURCE_FILES
     path.h
     rlg327.c
     utils.c
-    utils.h)
+    utils.h monster.h monster.c)
 
 add_executable(rlg327_f2016_1_03 ${SOURCE_FILES})
