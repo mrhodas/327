@@ -23,14 +23,11 @@ int main(int argc, char *argv[]) {
     int monster_num = 3;
 
     //check for number of monster flag
-    if (argc > 1) {
+    if (argc > 2) {
         if (strcmp(argv[1], "--nummon") == 0) {
-            printf("Enter the number of monsters: ");
-            scanf("%d", &monster_num);
+            monster_num = atoi(argv[2]);
         }
     }
-
-    printf("\n%d\n", monster_num);
 
     if (do_seed) {
         /* Allows me to generate more than one dungeon *
@@ -65,23 +62,28 @@ int main(int argc, char *argv[]) {
 
     initialize_monsters();
 
+    i = 1;
+    printf("\n%d\n", mon_list.monster_number);
     while (mon_list.monster_number > 0) {
+        printf("\nhello\n");
         sleep(1);
-        int alive_monsters = num_alive();
+//        int alive_monsters = num_alive();
+//        while (i < alive_monsters) {
+//            if(mon_list.alive[i] == 1){
+//                move_monster(i);
+//            }
+        d.pc.position[dim_x] = i + 1;
+        render_dungeon(&d);
+        i++;
 
-
-
-
-
-//dead monster
-        if (1) {
-            mon_list.monster_number--;
-        }
+        mon_list.monster_number--;
     }
 
 
-    printf("\n%u\n", d.pc.position[dim_x]);
 
+
+
+//free(mon_list);
     delete_dungeon(&d);
     return 0;
 }

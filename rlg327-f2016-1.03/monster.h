@@ -7,12 +7,9 @@
 
 typedef struct monster {
     pair_t position;
-    char type;
+    char representation;
+    char* type;
     int speed;
-    int intelligence;
-    int telepathy;
-    int tunneling;
-    int erratic;
     int line_of_sight;
 } mon_t;
 
@@ -27,6 +24,8 @@ m_list mon_list;
 double random_frac();
 int initialize_monsters();
 int num_alive();
+int move_monster(int i);
+char type_monster(int i);
 #endif
 
 
