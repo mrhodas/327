@@ -4,7 +4,7 @@
 # include "heap.h"
 # include "macros.h"
 # include "dims.h"
-# include "monster.h"
+# include "character.h"
 
 #define DUNGEON_X              80
 #define DUNGEON_Y              21
@@ -14,22 +14,19 @@
 #define ROOM_MIN_Y             3
 #define ROOM_MAX_X             14
 #define ROOM_MAX_Y             8
+#define VISUAL_RANGE           15
+#define PC_SPEED               10
 #define SAVE_DIR               ".rlg327"
 #define DUNGEON_SAVE_FILE      "dungeon"
 #define DUNGEON_SAVE_SEMANTIC  "RLG327"
 #define DUNGEON_SAVE_VERSION   0U
 
-#define PLAYER_SPEED       10
-#define NUM_OF_TYPES       4
-#define INTELLIGENCE 0
-#define TELEPATHY 1
-#define TUNNELING 2
-#define ERRATIC 3
-
 #define mappair(pair) (d->map[pair[dim_y]][pair[dim_x]])
 #define mapxy(x, y) (d->map[y][x])
 #define hardnesspair(pair) (d->hardness[pair[dim_y]][pair[dim_x]])
 #define hardnessxy(x, y) (d->hardness[y][x])
+#define charpair(pair) (d->character[pair[dim_y]][pair[dim_x]])
+#define charxy(x, y) (d->character[y][x])
 
 typedef enum __attribute__ ((__packed__)) terrain_type {
   ter_debug,
@@ -46,9 +43,7 @@ typedef struct room {
   uint32_t connected;
 } room_t;
 
-typedef struct pc {
-  pair_t position;
-} pc_t;
+typedef struct character character_t;
 
 typedef struct dungeon {
   uint32_t num_rooms;
@@ -65,7 +60,18 @@ typedef struct dungeon {
   uint8_t hardness[DUNGEON_Y][DUNGEON_X];
   uint8_t pc_distance[DUNGEON_Y][DUNGEON_X];
   uint8_t pc_tunnel[DUNGEON_Y][DUNGEON_X];
-  pc_t pc;
+  character_t *character[DUNGEON_Y][DUNGEON_X];
+  character_t pc;
+  heap_t events;
+  uint16_t num_monsters;
+  uint16_t max_monsters;
+  uint32_t character_sequence_number;
+  /* Game time isn't strictly necessary.  It's implicit in the turn number *
+   * of the most recent thing removed from the event queue; however,       *
+   * including it here--and keeping it up to date--provides a measure of   *
+   * convenience, e.g., the ability to create a new event without explicit *
+   * information from the current event.                                   */
+  uint32_t time;
 } dungeon_t;
 
 void init_dungeon(dungeon_t *d);

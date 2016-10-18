@@ -8,6 +8,7 @@
 #include "dungeon.h"
 #include "utils.h"
 #include "heap.h"
+#include "event.h"
 
 typedef struct corridor_path {
   heap_node_t *hn;
@@ -483,6 +484,7 @@ static int empty_dungeon(dungeon_t *d)
         mapxy(x, y) = ter_wall_immutable;
         hardnessxy(x, y) = 255;
       }
+      charxy(x, y) = NULL;
     }
   }
 
@@ -578,12 +580,11 @@ void render_dungeon(dungeon_t *d)
 {
   pair_t p;
 
-  int i = 0;
+  putchar('\n');
   for (p[dim_y] = 0; p[dim_y] < DUNGEON_Y; p[dim_y]++) {
     for (p[dim_x] = 0; p[dim_x] < DUNGEON_X; p[dim_x]++) {
-      if (p[dim_x] ==  d->pc.position[dim_x] &&
-          p[dim_y] ==  d->pc.position[dim_y]) {
-        putchar('@');
+      if (d->character[p[dim_y]][p[dim_x]]) {
+        putchar(d->character[p[dim_y]][p[dim_x]]->symbol);
       } else {
         switch (mappair(p)) {
         case ter_wall:
@@ -598,7 +599,6 @@ void render_dungeon(dungeon_t *d)
           putchar('#');
           break;
         case ter_debug:
-          printf("Debug character at %d, %d\n", p[dim_y], p[dim_x]);
           putchar('*');
           break;
         }
@@ -606,16 +606,23 @@ void render_dungeon(dungeon_t *d)
     }
     putchar('\n');
   }
+  putchar('\n');
+  putchar('\n');
 }
 
 void delete_dungeon(dungeon_t *d)
 {
   free(d->rooms);
+  heap_delete(&d->events);
+  memset(d->character, 0, sizeof (d->character));
 }
 
 void init_dungeon(dungeon_t *d)
 {
   empty_dungeon(d);
+
+  memset(&d->events, 0, sizeof (d->events));
+  heap_init(&d->events, compare_events, event_delete);
 }
 
 int write_dungeon_map(dungeon_t *d, FILE *f)

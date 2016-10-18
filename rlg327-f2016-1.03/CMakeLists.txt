@@ -27,10 +27,14 @@ set(SOURCE_FILES
     heap.c
     heap.h
     macros.h
+    monster.c
+    monster.h
     path.c
     path.h
+    priorityQueue.c
+    priorityQueue.h
     rlg327.c
     utils.c
-    utils.h monster.h monster.c)
+    utils.h)
 
 add_executable(rlg327_f2016_1_03 ${SOURCE_FILES})

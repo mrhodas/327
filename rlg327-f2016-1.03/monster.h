@@ -1,9 +1,10 @@
-#ifndef RLG327_F2016_1_03_MAIN_H
-#define RLG327_F2016_1_03_MAIN_H
+#ifndef MONSTER_H
+#define MONSTER_H
 
 #include "dungeon.h"
 
 #define HARD_ATTACK    85;
+#define DEFAULT_MONSTER_COUNT 3;
 
 typedef struct monster {
     pair_t position;
@@ -19,12 +20,14 @@ typedef struct monster_list{
     int* alive;
 } m_list;
 
+//Global monster list.
 m_list mon_list;
 
 double random_frac();
 int initialize_monsters();
 int num_alive();
 int move_monster(int i);
+//void render_monsters(dungeon_t *d);
 char type_monster(int i);
 #endif
 
