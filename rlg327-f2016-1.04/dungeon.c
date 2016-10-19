@@ -575,39 +575,93 @@ int gen_dungeon(dungeon_t *d)
 
   return 0;
 }
-
+//TODO
 void render_dungeon(dungeon_t *d)
 {
-  pair_t p;
+    //    initscr();
+//    noecho();
+//    //nodelay(stdscr, TRUE);
+//
+//    cbreak();
+//    keypad(stdscr, TRUE);
+//    nonl();
+//    cbreak();
+//
+//    WINDOW *msg_win = newwin(1, 80, 0, 0);
+//    WINDOW *dun_win = newwin(21, 80, 1, 0);
+//    WINDOW *bot_win = newwin(2, 80, 22, 0);
+    int ch = 0;
+    int i;
+    i=0;
+    while (pc_is_alive(d)) {
 
-  putchar('\n');
-  for (p[dim_y] = 0; p[dim_y] < DUNGEON_Y; p[dim_y]++) {
-    for (p[dim_x] = 0; p[dim_x] < DUNGEON_X; p[dim_x]++) {
-      if (d->character[p[dim_y]][p[dim_x]]) {
-        putchar(d->character[p[dim_y]][p[dim_x]]->symbol);
-      } else {
-        switch (mappair(p)) {
-        case ter_wall:
-        case ter_wall_immutable:
-          putchar(' ');
-          break;
-        case ter_floor:
-        case ter_floor_room:
-          putchar('.');
-          break;
-        case ter_floor_hall:
-          putchar('#');
-          break;
-        case ter_debug:
-          putchar('*');
-          break;
+
+        printf("%i: %c\n", i,ch);
+
+        i++;
+        ch++;
+        if(i == 150){
+            d->pc.alive = 0;
         }
-      }
+//        wmove(msg_win, 0, i);
+//        wrefresh(msg_win);
+//        sleep(1);
+//
+//        wmove(dun_win, 0, i);
+//        wrefresh(dun_win);
+//        sleep(1);
+//
+//        wmove(bot_win, 0, i);
+//        wrefresh(bot_win);
+//        sleep(1);
+
     }
-    putchar('\n');
-  }
-  putchar('\n');
-  putchar('\n');
+
+
+    //endwin();
+
+
+
+
+
+//    while (pc_is_alive(&d) && dungeon_has_npcs(&d)) {
+//        render_dungeon(&d);
+//        do_moves(&d);
+//        usleep(250000);
+//    }
+//    render_dungeon(&d);
+
+    //OLD
+//  pair_t p;
+//
+//  putchar('\n');
+//  for (p[dim_y] = 0; p[dim_y] < DUNGEON_Y; p[dim_y]++) {
+//    for (p[dim_x] = 0; p[dim_x] < DUNGEON_X; p[dim_x]++) {
+//      if (d->character[p[dim_y]][p[dim_x]]) {
+//        putchar(d->character[p[dim_y]][p[dim_x]]->symbol);
+//      } else {
+//        switch (mappair(p)) {
+//        case ter_wall:
+//        case ter_wall_immutable:
+//          putchar(' ');
+//          break;
+//        case ter_floor:
+//        case ter_floor_room:
+//          putchar('.');
+//          break;
+//        case ter_floor_hall:
+//          putchar('#');
+//          break;
+//        case ter_debug:
+//          putchar('*');
+//          break;
+//        }
+//      }
+//    }
+//    putchar('\n');
+//  }
+//  putchar('\n');
+//  putchar('\n');
 }
 
 void delete_dungeon(dungeon_t *d)

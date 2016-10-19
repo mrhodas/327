@@ -5,6 +5,7 @@
 # include "macros.h"
 # include "dims.h"
 # include "character.h"
+# include "pc.h"
 
 #define DUNGEON_X              80
 #define DUNGEON_Y              21
