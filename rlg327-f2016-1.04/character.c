@@ -8,7 +8,7 @@
 
 void character_delete(void *v)
 {
-  /* The PC is never malloc()ed anymore, do don't attempt to free it here. */
+  /* The PC is never malloc()ed anymore, so don't attempt to free it here. */
   character_t *c;
 
   if (v) {

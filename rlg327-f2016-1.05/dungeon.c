@@ -4,14 +4,13 @@
 #include <sys/stat.h>
 #include <limits.h>
 #include <errno.h>
-#include <unistd.h>
-
 
 #include "dungeon.h"
 #include "utils.h"
 #include "heap.h"
 #include "event.h"
-#include "character.h"
+#include "Pc.h"
+#include "Npc.h"
 
 typedef struct corridor_path {
     heap_node_t *hn;
@@ -558,59 +557,34 @@ static int make_rooms(dungeon_t *d) {
     return 0;
 }
 
+static void place_stairs(dungeon_t *d) {
+    pair_t p;
+    do {
+        while ((p[dim_y] = rand_range(1, DUNGEON_Y - 2)) &&
+               (p[dim_x] = rand_range(1, DUNGEON_X - 2)) &&
+               ((mappair(p) < ter_floor) ||
+                (mappair(p) > ter_stairs)));
+        mappair(p) = ter_stairs_down;
+    } while (rand_under(1, 3));
+    do {
+        while ((p[dim_y] = rand_range(1, DUNGEON_Y - 2)) &&
+               (p[dim_x] = rand_range(1, DUNGEON_X - 2)) &&
+               ((mappair(p) < ter_floor) ||
+                (mappair(p) > ter_stairs)))
+
+            ;
+        mappair(p) = ter_stairs_up;
+    } while (rand_under(1, 4));
+}
+
 int gen_dungeon(dungeon_t *d) {
     do {
         make_rooms(d);
     } while (place_rooms(d));
     connect_rooms(d);
-    int i;
-    for(i = 0; i < d->num_rooms; i++){
-        int row = d->rooms[i].position[dim_y] + 1;
-        int col = d->rooms[i].position[dim_x] + 1;
-        if(i % 2 == 0) {
-            d->map[row][col] = ter_stair_up;
-        } else {
-            d->map[row][col] = ter_stair_down;
-        }
-    }
+    place_stairs(d);
 
     return 0;
-}
-
-void render_dungeon(dungeon_t *d) {
-    wmove(dun_win, 0, 0);
-    pair_t p;
-    for (p[dim_y] = 0; p[dim_y] < DUNGEON_Y; p[dim_y]++) {
-        for (p[dim_x] = 0; p[dim_x] < DUNGEON_X; p[dim_x]++) {
-            if (d->character[p[dim_y]][p[dim_x]]) {
-                waddch(dun_win, d->character[p[dim_y]][p[dim_x]]->symbol);
-            } else {
-                switch (mappair(p)) {
-                    case ter_wall:
-                    case ter_wall_immutable:
-                        waddch(dun_win, ' ');
-                        break;
-                    case ter_floor:
-                    case ter_floor_room:
-                        waddch(dun_win, '.');
-                        break;
-                    case ter_floor_hall:
-                        waddch(dun_win, '#');
-                        break;
-                    case ter_debug:
-                        waddch(dun_win, '*');
-                        break;
-                    case ter_stair_up:
-                        waddch(dun_win, '>');
-                        break;
-                    case ter_stair_down:
-                        waddch(dun_win, '<');
-                        break;
-                }
-            }
-        }
-    }
-    wrefresh(dun_win);
 }
 
 void delete_dungeon(dungeon_t *d) {
@@ -620,6 +594,8 @@ void delete_dungeon(dungeon_t *d) {
 }
 
 void init_dungeon(dungeon_t *d) {
+    d->time = d->quit = d->character_sequence_number = 0;
+
     empty_dungeon(d);
 
     memset(&d->events, 0, sizeof(d->events));
@@ -925,4 +901,23 @@ int read_pgm(dungeon_t *d, char *pgm) {
     }
 
     return 0;
+}
+
+void new_dungeon(dungeon_t *d) {
+    uint32_t sequence_number;
+
+    sequence_number = d->character_sequence_number;
+
+    delete_dungeon(d);
+
+    init_dungeon(d);
+    gen_dungeon(d);
+    d->character_sequence_number = sequence_number;
+
+    place_pc(d);
+    //d->character[cget_position_character()][d->pc.position[dim_x]] = &d->pc;
+
+    gen_monsters(d);
+
+    init_seen(d);
 }

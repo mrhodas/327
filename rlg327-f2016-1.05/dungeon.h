@@ -1,16 +1,10 @@
 #ifndef DUNGEON_H
 # define DUNGEON_H
 
-# include <ncurses.h>
 # include "heap.h"
 # include "macros.h"
 # include "dims.h"
-# include "character.h"
-# include "pc.h"
-# include "npc.h"
-# include "move.h"
-
-
+# include "Character.h"
 
 #define DUNGEON_X              80
 #define DUNGEON_Y              21
@@ -26,9 +20,10 @@
 #define DUNGEON_SAVE_FILE      "dungeon"
 #define DUNGEON_SAVE_SEMANTIC  "RLG327"
 #define DUNGEON_SAVE_VERSION   0U
-
 #define mappair(pair) (d->map[pair[dim_y]][pair[dim_x]])
 #define mapxy(x, y) (d->map[y][x])
+#define seenxy(x, y) (d->seen[y][x])
+#define seenmapxy(x, y) (d->seenMap[y][x])
 #define hardnesspair(pair) (d->hardness[pair[dim_y]][pair[dim_x]])
 #define hardnessxy(x, y) (d->hardness[y][x])
 #define charpair(pair) (d->character[pair[dim_y]][pair[dim_x]])
@@ -38,11 +33,13 @@ typedef enum __attribute__ ((__packed__)) terrain_type {
     ter_debug,
     ter_wall,
     ter_wall_immutable,
+    ter_unknown,
     ter_floor,
     ter_floor_room,
     ter_floor_hall,
-    ter_stair_up,
-    ter_stair_down
+    ter_stairs,
+    ter_stairs_up,
+    ter_stairs_down
 } terrain_type_t;
 
 typedef struct room {
@@ -50,8 +47,6 @@ typedef struct room {
     pair_t size;
     uint32_t connected;
 } room_t;
-
-typedef struct character character_t;
 
 typedef struct dungeon {
     uint32_t num_rooms;
@@ -69,7 +64,9 @@ typedef struct dungeon {
     uint8_t pc_distance[DUNGEON_Y][DUNGEON_X];
     uint8_t pc_tunnel[DUNGEON_Y][DUNGEON_X];
     character_t *character[DUNGEON_Y][DUNGEON_X];
-    character_t pc;
+    terrain_type_t seenMap[DUNGEON_Y][DUNGEON_X];
+    int seen[DUNGEON_Y][DUNGEON_X];
+    character_t *pc;
     heap_t events;
     uint16_t num_monsters;
     uint16_t max_monsters;
@@ -80,15 +77,12 @@ typedef struct dungeon {
      * convenience, e.g., the ability to create a new event without explicit *
      * information from the current event.                                   */
     uint32_t time;
+    uint32_t quit;
 } dungeon_t;
 
-WINDOW *msg_win;
-WINDOW *dun_win;
-WINDOW *btm_win;
-WINDOW *mon_win;
-
-
 void init_dungeon(dungeon_t *d);
+
+void new_dungeon(dungeon_t *d);
 
 void delete_dungeon(dungeon_t *d);
 
@@ -101,5 +95,9 @@ int write_dungeon(dungeon_t *d);
 int read_dungeon(dungeon_t *d, char *file);
 
 int read_pgm(dungeon_t *d, char *pgm);
+
+void render_distance_map(dungeon_t *d);
+
+void render_tunnel_distance_map(dungeon_t *d);
 
 #endif

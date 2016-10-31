@@ -1,15 +1,13 @@
 #include <stdio.h>
 #include <string.h>
-#include <time.h>
 #include <sys/time.h>
 #include <unistd.h>
 
 #include "dungeon.h"
-#include "pc.h"
-#include "npc.h"
+#include "Pc.h"
+#include "Npc.h"
 #include "move.h"
-
-#define NUMBER_OF_VALID_CHARS 22
+#include "io.h"
 
 const char *victory =
         "\n                                       o\n"
@@ -73,9 +71,17 @@ void usage(char *name) {
     exit(-1);
 }
 
-int valid_input(char ch);
-
 int main(int argc, char *argv[]) {
+
+
+
+
+
+
+
+
+
+    //ORIGINAL TODO
     dungeon_t d;
     time_t seed;
     struct timeval tv;
@@ -165,22 +171,22 @@ int main(int argc, char *argv[]) {
                         }
                         break;
                     case 'p':
-                        if ((!long_arg && argv[i][2]) ||
-                            (long_arg && strcmp(argv[i], "-pc")) ||
-                            argc <= i + 2 ||
-                            argv[i + 1][0] == '-' ||
-                            argv[i + 2][0] == '-') {
-                            usage(argv[0]);
-                        }
-                        do_place_pc = 1;
-                        if ((d.pc.position[dim_y] = atoi(argv[++i])) < 1 ||
-                            d.pc.position[dim_y] > DUNGEON_Y - 2 ||
-                            (d.pc.position[dim_x] = atoi(argv[++i])) < 1 ||
-                            d.pc.position[dim_x] > DUNGEON_X - 2) {
-                            fprintf(stderr, "Invalid PC position.\n");
-                            usage(argv[0]);
-                        }
-                        break;
+//                        if ((!long_arg && argv[i][2]) ||
+//                            (long_arg && strcmp(argv[i], "-pc")) ||
+//                            argc <= i + 2 ||
+//                            argv[i + 1][0] == '-' ||
+//                            argv[i + 2][0] == '-') {
+//                            usage(argv[0]);
+//                        }
+//                        do_place_pc = 1;
+//                        if ((d.pc.position[dim_y] = atoi(argv[++i])) < 1 ||
+//                            d.pc.position[dim_y] > DUNGEON_Y - 2 ||
+//                            (d.pc.position[dim_x] = atoi(argv[++i])) < 1 ||
+//                            d.pc.position[dim_x] > DUNGEON_X - 2) {
+//                            fprintf(stderr, "Invalid PC position.\n");
+//                            usage(argv[0]);
+//                        }
+//                        break;
                     default:
                         usage(argv[0]);
                 }
@@ -197,8 +203,10 @@ int main(int argc, char *argv[]) {
         seed = (tv.tv_usec ^ (tv.tv_sec << 20)) & 0xffffffff;
     }
 
-    //printf("Seed is %ld.\n", seed);
+    printf("Seed is %ld.\n", seed);
     srand(seed);
+
+    io_init_terminal();
     init_dungeon(&d);
 
     if (do_load) {
@@ -208,169 +216,30 @@ int main(int argc, char *argv[]) {
     } else {
         gen_dungeon(&d);
     }
+
     config_pc(&d);
     gen_monsters(&d);
 
+    io_display(&d);
+    while (pc_is_alive(&d) && dungeon_has_npcs(&d) && !d.quit) {
+        do_moves(&d);
+    }
+    io_display(&d);
 
-    //init ncurses.
-    initscr();
-    noecho();
-    curs_set(FALSE);
-    cbreak();
-    keypad(stdscr, TRUE);
-
-    // init windows
-    msg_win = newwin(1, DUNGEON_X, 0, 0);
-    dun_win = newwin(DUNGEON_Y, DUNGEON_X, 1, 0);
-    btm_win = newwin(2, DUNGEON_X, DUNGEON_Y + 2, 0);
-    mon_win = newwin(10, 20, 10, 30);
-
-    //Fill bottom with -'s
-    wmove(btm_win, 0, 0);
-    for (i = 1; i < (DUNGEON_X * 2) + 1; i++) {
-        waddch(btm_win, '-');
+    if (!d.quit) {
+        sleep(2);
     }
 
-    render_dungeon(&d);
-    wrefresh(dun_win);
-    wrefresh(btm_win);
-    wrefresh(msg_win);
-    refresh();
-
-    int moves = 1;
-    char input;
-    i = 0;
-    while (pc_is_alive(&d) && dungeon_has_npcs(&d)) {
-
-        if ((input = getch()) == ERR) {
-            mvwprintw(msg_win, 0, 0, "There was an ERR in input.");
-            wrefresh(msg_win);
-        } else {
-            if (valid_input(input)) {
-                if (input == 'Q') {
-                    endwin();
-                    delete_dungeon(&d);
-                    pc_delete(d.pc.pc);
-                    printf("\nProgram Ended...\n\n");
-                    return 0;
-                }
-                if (input == 'm') {
-                    moves = 0;
-                    int y;
-                    for (y = 0; y < d.num_monsters; y++) {
-                        mvwprintw(mon_win, y, 0, "%d. Monster %d", y + 1, y + 1);
-                        if (y == 9) {
-                            break;
-                        }
-                    }
-                    wrefresh(mon_win);
-                    int flag = 1;
-                    int offset = 0;
-                    while (flag) {
-                        char in = getch();
-                        if (in == KEY_UP) {
-                            if (offset > 0) {
-                                offset--;
-                                wclear(mon_win);
-                                for (y = offset; y < d.num_monsters; y++) {
-                                    mvwprintw(mon_win, y, 0, "%d. Monster %d", y + 1 + offset, y + 1 + offset);
-                                    if (y == 9) {
-                                        break;
-                                    }
-                                }
-                                wrefresh(mon_win);
-                            }
-                        }
-                        if (in == KEY_DOWN) {
-                            if (offset < d.num_monsters) {
-                                offset++;
-                                wclear(mon_win);
-                                for (y = offset; y < d.num_monsters; y++) {
-                                    mvwprintw(mon_win, y, 0, "%d. Monster %d", y + 1 + offset, y + 1 + offset);
-                                    if (y == 9) {
-                                        break;
-                                    }
-                                }
-                                wrefresh(mon_win);
-                            }
-                        }
-
-                        if (in == 27) {
-                            flag = 0;
-                            wclear(mon_win);
-                            wrefresh(mon_win);
-                            wrefresh(btm_win);
-                        }
-                    }
-                }
-                if (input == '>') {
-                    moves = 0;
-                    if (d.map[d.pc.position[dim_y]][d.pc.position[dim_x]]
-                        == ter_stair_up) {
-                        //delete_dungeon(&d);
-                        //character_delete(d.pc.pc);
-                        init_dungeon(&d);
-                        gen_dungeon(&d);
-                        config_pc(&d);
-                        gen_monsters(&d);
-                        render_dungeon(&d);
-                        continue;
-                    }
-                }
-                if (input == '<') {
-                    moves = 0;
-                    if (d.map[d.pc.position[dim_y]][d.pc.position[dim_x]]
-                        == ter_stair_down) {
-                        //delete_dungeon(&d);
-                        //character_delete(d.pc.pc);
-                        init_dungeon(&d);
-                        gen_dungeon(&d);
-                        config_pc(&d);
-                        gen_monsters(&d);
-                        render_dungeon(&d);
-                        continue;
-                    }
-                }
-                mvwprintw(msg_win, 0, 0, "%c was pressed.", input);
-                wrefresh(msg_win);
-                if (moves) {
-                    do_moves(&d, input);
-                }
-                moves = 1;
-            }
-        }
-        render_dungeon(&d);
-        wrefresh(dun_win);
-        wrefresh(btm_win);
-        refresh();
-    }
-
-    endwin();
+    io_reset_terminal();
 
     if (do_save) {
         write_dungeon(&d);
     }
+
     printf(pc_is_alive(&d) ? victory : tombstone);
 
-    pc_delete(d.pc.pc);
+    //pc_delete(d.pc.pc);
     delete_dungeon(&d);
-
-    return 0;
-}
-
-int valid_input(char ch) {
-    char validChars[NUMBER_OF_VALID_CHARS] = "123456789ykulnjbh<> mQ";
-    int i;
-
-    for (i = 0; i < NUMBER_OF_VALID_CHARS; i++) {
-        if (ch == validChars[i]) {
-            return 1;
-        }
-    }
-
-    if (ch == KEY_UP || ch == KEY_DOWN) {
-        return 1;
-    }
 
     return 0;
 }
