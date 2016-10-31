@@ -7,11 +7,10 @@
 
 int main() {
 
-    uthread *u = new uthread();
+    int maxThreads = 10;
 
-    u->printnumm();
-    u->addd();
-    u->printnumm();
+    uthread *u = new uthread(maxThreads);
+
 
 
     return 0;

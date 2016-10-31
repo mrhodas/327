@@ -14,7 +14,7 @@
 #include <queue>
 #include <map>
 
-#include "UserThread.h"
+#include "Thread.h"
 
 
 using namespace std;
@@ -22,26 +22,22 @@ using namespace std;
 class uthread {
 private:
     //Global Variables
-    int num;
     int maxThreads;
     int numOfThreads;
     //pthread_mutex_t mapMtx;
     //pthread_mutex_t qMtx;
     //pthread_mutex_t threadMtx;
-    //map<int, UserThread *> *init_thread_map;
-    //priority_queue<UserThread *> *init_thread_pqueue;
+    map<int, Thread *> *init_thread_map;
+    priority_queue<Thread *> *init_thread_pqueue;
 
 
 public:
-    inline void addd() {
-        num++;
+
+    inline void setMaxThreads(int max){
+        maxThreads = max;
     }
 
-    inline void printnumm() {
-        cout << num << endl;
-    }
-
-    uthread();
+    uthread(int maxThreads);
 
     void uthread_init(int numKernelThreads);
 

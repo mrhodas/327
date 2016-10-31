@@ -6,8 +6,8 @@
 
 #include "uthread.h"
 
-uthread::uthread() {
-    int num = 0;
+uthread::uthread(int maxThreads) {
+    setMaxThreads(maxThreads);
 }
 
 void uthread::uthread_init(int numKernelThreads) {
