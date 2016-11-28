@@ -1,0 +1,16 @@
+Assignment #4 - 10/5/16
+-I have made a monster type that uses a monster list that fills itself with randomly generated monsters
+defined by the user.  Otherwise the default monster number is 3.
+UPDATE:
+-Rendering loop working
+-Queue is not working.
+
+Assignment #3 - 9/14/16
+-Construct a graph with weighted edges
+-Did not finish shortest path with Floyd Warshall
+
+Assignment #2 - 9/14/16
+-Working on saving dungeon.
+
+Assignment #1 - 9/7/16
+-Made dungeon generator that connects by corners.

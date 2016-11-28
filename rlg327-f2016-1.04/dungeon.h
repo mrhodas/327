@@ -5,6 +5,10 @@
 # include "macros.h"
 # include "dims.h"
 # include "character.h"
+<<<<<<< HEAD
+=======
+# include "pc.h"
+>>>>>>> afaa278bbb54864f37bfd875d2473e3eeeddab5d
 
 #define DUNGEON_X              80
 #define DUNGEON_Y              21
@@ -78,8 +82,13 @@ void init_dungeon(dungeon_t *d);
 void delete_dungeon(dungeon_t *d);
 int gen_dungeon(dungeon_t *d);
 void render_dungeon(dungeon_t *d);
+<<<<<<< HEAD
 //int write_dungeon(dungeon_t *d);
 //int read_dungeon(dungeon_t *d, char *file);
+=======
+int write_dungeon(dungeon_t *d);
+int read_dungeon(dungeon_t *d, char *file);
+>>>>>>> afaa278bbb54864f37bfd875d2473e3eeeddab5d
 int read_pgm(dungeon_t *d, char *pgm);
 void render_distance_map(dungeon_t *d);
 void render_tunnel_distance_map(dungeon_t *d);

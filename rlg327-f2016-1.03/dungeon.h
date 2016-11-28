@@ -4,6 +4,7 @@
 # include "heap.h"
 # include "macros.h"
 # include "dims.h"
+# include "monster.h"
 
 #define DUNGEON_X              80
 #define DUNGEON_Y              21
@@ -17,6 +18,13 @@
 #define DUNGEON_SAVE_FILE      "dungeon"
 #define DUNGEON_SAVE_SEMANTIC  "RLG327"
 #define DUNGEON_SAVE_VERSION   0U
+
+#define PLAYER_SPEED       10
+#define NUM_OF_TYPES       4
+#define INTELLIGENCE 0
+#define TELEPATHY 1
+#define TUNNELING 2
+#define ERRATIC 3
 
 #define mappair(pair) (d->map[pair[dim_y]][pair[dim_x]])
 #define mapxy(x, y) (d->map[y][x])

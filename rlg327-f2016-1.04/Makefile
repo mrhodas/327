@@ -5,7 +5,11 @@ RM = rm -f
 
 CFLAGS = -Wall -ggdb -funroll-loops
 CXXFLAGS = -Wall -ggdb -funroll-loops
+<<<<<<< HEAD
 LDFLAGS = 
+=======
+LDFLAGS = -lncurses
+>>>>>>> afaa278bbb54864f37bfd875d2473e3eeeddab5d
 
 BIN = rlg327
 OBJS = rlg327.o dungeon.o heap.o utils.o path.o character.o pc.o npc.o \

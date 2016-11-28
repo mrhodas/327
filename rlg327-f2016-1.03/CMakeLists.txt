@@ -27,8 +27,12 @@ set(SOURCE_FILES
     heap.c
     heap.h
     macros.h
+    monster.c
+    monster.h
     path.c
     path.h
+    priorityQueue.c
+    priorityQueue.h
     rlg327.c
     utils.c
     utils.h)

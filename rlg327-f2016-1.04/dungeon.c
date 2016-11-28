@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdint.h>
+<<<<<<< HEAD
 //#include <endian.h>
+=======
+#include <endian.h>
+>>>>>>> afaa278bbb54864f37bfd875d2473e3eeeddab5d
 #include <sys/stat.h>
 #include <limits.h>
 #include <errno.h>
@@ -575,6 +579,7 @@ int gen_dungeon(dungeon_t *d)
 
   return 0;
 }
+<<<<<<< HEAD
 
 void render_dungeon(dungeon_t *d)
 {
@@ -608,6 +613,95 @@ void render_dungeon(dungeon_t *d)
   }
   putchar('\n');
   putchar('\n');
+=======
+//TODO
+void render_dungeon(dungeon_t *d)
+{
+    //    initscr();
+//    noecho();
+//    //nodelay(stdscr, TRUE);
+//
+//    cbreak();
+//    keypad(stdscr, TRUE);
+//    nonl();
+//    cbreak();
+//
+//    WINDOW *msg_win = newwin(1, 80, 0, 0);
+//    WINDOW *dun_win = newwin(21, 80, 1, 0);
+//    WINDOW *bot_win = newwin(2, 80, 22, 0);
+    int ch = 0;
+    int i;
+    i=0;
+    while (pc_is_alive(d)) {
+
+
+        printf("%i: %c\n", i,ch);
+
+        i++;
+        ch++;
+        if(i == 150){
+            d->pc.alive = 0;
+        }
+//        wmove(msg_win, 0, i);
+//        wrefresh(msg_win);
+//        sleep(1);
+//
+//        wmove(dun_win, 0, i);
+//        wrefresh(dun_win);
+//        sleep(1);
+//
+//        wmove(bot_win, 0, i);
+//        wrefresh(bot_win);
+//        sleep(1);
+
+    }
+
+
+    //endwin();
+
+
+
+
+
+//    while (pc_is_alive(&d) && dungeon_has_npcs(&d)) {
+//        render_dungeon(&d);
+//        do_moves(&d);
+//        usleep(250000);
+//    }
+//    render_dungeon(&d);
+
+    //OLD
+//  pair_t p;
+//
+//  putchar('\n');
+//  for (p[dim_y] = 0; p[dim_y] < DUNGEON_Y; p[dim_y]++) {
+//    for (p[dim_x] = 0; p[dim_x] < DUNGEON_X; p[dim_x]++) {
+//      if (d->character[p[dim_y]][p[dim_x]]) {
+//        putchar(d->character[p[dim_y]][p[dim_x]]->symbol);
+//      } else {
+//        switch (mappair(p)) {
+//        case ter_wall:
+//        case ter_wall_immutable:
+//          putchar(' ');
+//          break;
+//        case ter_floor:
+//        case ter_floor_room:
+//          putchar('.');
+//          break;
+//        case ter_floor_hall:
+//          putchar('#');
+//          break;
+//        case ter_debug:
+//          putchar('*');
+//          break;
+//        }
+//      }
+//    }
+//    putchar('\n');
+//  }
+//  putchar('\n');
+//  putchar('\n');
+>>>>>>> afaa278bbb54864f37bfd875d2473e3eeeddab5d
 }
 
 void delete_dungeon(dungeon_t *d)
@@ -665,6 +759,7 @@ uint32_t calculate_dungeon_size(dungeon_t *d)
           (d->num_rooms * 4) /* Four bytes per room */);
 }
 
+<<<<<<< HEAD
 //int write_dungeon(dungeon_t *d)
 //{
 //  char *home;
@@ -739,6 +834,82 @@ uint32_t calculate_dungeon_size(dungeon_t *d)
 //
 //  return 0;
 //}
+=======
+int write_dungeon(dungeon_t *d)
+{
+  char *home;
+  char *filename;
+  FILE *f;
+  size_t len;
+  uint32_t be32;
+
+  if (!(home = getenv("HOME"))) {
+    fprintf(stderr, "\"HOME\" is undefined.  Using working directory.\n");
+    home = ".";
+  }
+
+  len = (strlen(home) + strlen(SAVE_DIR) + strlen(DUNGEON_SAVE_FILE) +
+         1 /* The NULL terminator */                                 +
+         2 /* The slashes */);
+
+  filename = malloc(len * sizeof (*filename));
+  sprintf(filename, "%s/%s/", home, SAVE_DIR);
+  makedirectory(filename);
+  strcat(filename, DUNGEON_SAVE_FILE);
+
+  if (!(f = fopen(filename, "w"))) {
+    perror(filename);
+    free(filename);
+
+    return 1;
+  }
+  free(filename);
+
+  /* The semantic, which is 6 bytes, 0-5 */
+  fwrite(DUNGEON_SAVE_SEMANTIC, 1, strlen(DUNGEON_SAVE_SEMANTIC), f);
+
+  /* The version, 4 bytes, 6-9 */
+  be32 = htobe32(DUNGEON_SAVE_VERSION);
+  fwrite(&be32, sizeof (be32), 1, f);
+
+  /* The size of the file, 4 bytes, 10-13 */
+  be32 = htobe32(calculate_dungeon_size(d));
+  fwrite(&be32, sizeof (be32), 1, f);
+
+  /* The dungeon map, 61440 bytes, 14-1495 */
+  write_dungeon_map(d, f);
+
+  /* And the rooms, num_rooms * 4 bytes, 1496-end */
+  write_rooms(d, f);
+
+  fclose(f);
+
+  return 0;
+}
+
+int read_dungeon_map(dungeon_t *d, FILE *f)
+{
+  uint32_t x, y;
+
+  for (y = 0; y < DUNGEON_Y; y++) {
+    for (x = 0; x < DUNGEON_X; x++) {
+      fread(&d->hardness[y][x], sizeof (d->hardness[y][x]), 1, f);
+      if (d->hardness[y][x] == 0) {
+        /* Mark it as a corridor.  We can't recognize room cells until *
+         * after we've read the room array, which we haven't done yet. */
+        d->map[y][x] = ter_floor_hall;
+      } else if (d->hardness[y][x] == 255) {
+        d->map[y][x] = ter_wall_immutable;
+      } else {
+        d->map[y][x] = ter_wall;
+      }
+    }
+  }
+
+
+  return 0;
+}
+>>>>>>> afaa278bbb54864f37bfd875d2473e3eeeddab5d
 
 int read_rooms(dungeon_t *d, FILE *f)
 {
@@ -778,6 +949,7 @@ int calculate_num_rooms(uint32_t dungeon_bytes)
           4 /* Four bytes per room */);
 }
 
+<<<<<<< HEAD
 //int read_dungeon(dungeon_t *d, char *file)
 //{
 //  char semantic[6];
@@ -851,6 +1023,81 @@ int calculate_num_rooms(uint32_t dungeon_bytes)
 //
 //  return 0;
 //}
+=======
+int read_dungeon(dungeon_t *d, char *file)
+{
+  char semantic[6];
+  uint32_t be32;
+  FILE *f;
+  char *home;
+  size_t len;
+  char *filename;
+  struct stat buf;
+
+  if (!file) {
+    if (!(home = getenv("HOME"))) {
+      fprintf(stderr, "\"HOME\" is undefined.  Using working directory.\n");
+      home = ".";
+    }
+
+    len = (strlen(home) + strlen(SAVE_DIR) + strlen(DUNGEON_SAVE_FILE) +
+           1 /* The NULL terminator */                                 +
+           2 /* The slashes */);
+
+    filename = malloc(len * sizeof (*filename));
+    sprintf(filename, "%s/%s/%s", home, SAVE_DIR, DUNGEON_SAVE_FILE);
+
+    if (!(f = fopen(filename, "r"))) {
+      perror(filename);
+      free(filename);
+      exit(-1);
+    }
+
+    if (stat(filename, &buf)) {
+      perror(filename);
+      exit(-1);
+    }
+
+    free(filename);
+  } else {
+    if (!(f = fopen(file, "r"))) {
+      perror(file);
+      exit(-1);
+    }
+    if (stat(file, &buf)) {
+      perror(file);
+      exit(-1);
+    }
+
+  }
+
+  d->num_rooms = 0;
+
+  fread(semantic, sizeof(semantic), 1, f);
+  if (strncmp(semantic, DUNGEON_SAVE_SEMANTIC, 6)) {
+    fprintf(stderr, "Not an RLG327 save file.\n");
+    exit(-1);
+  }
+  fread(&be32, sizeof (be32), 1, f);
+  if (be32toh(be32) != 0) { /* Since we expect zero, be32toh() is a no-op. */
+    fprintf(stderr, "File version mismatch.\n");
+    exit(-1);
+  }
+  fread(&be32, sizeof (be32), 1, f);
+  if (buf.st_size != be32toh(be32)) {
+    fprintf(stderr, "File size mismatch.\n");
+    exit(-1);
+  }
+  read_dungeon_map(d, f);
+  d->num_rooms = calculate_num_rooms(buf.st_size);
+  d->rooms = malloc(sizeof (*d->rooms) * d->num_rooms);
+  read_rooms(d, f);
+
+  fclose(f);
+
+  return 0;
+}
+>>>>>>> afaa278bbb54864f37bfd875d2473e3eeeddab5d
 
 int read_pgm(dungeon_t *d, char *pgm)
 {

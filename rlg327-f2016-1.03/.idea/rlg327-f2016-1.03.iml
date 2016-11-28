@@ -4,22 +4,26 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/dims.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/macros.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/priorityQueue.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/save_files/1.rlg327" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/save_files/9.rlg327" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/save_files/smile.rlg327" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/save_files/4.rlg327" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/save_files/6.rlg327" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/save_files/8.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/save_files/9.rlg327" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/save_files/welldone.rlg327" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/save_files/hello.rlg327" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/save_files/2.rlg327" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/save_files/0.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/save_files/8.rlg327" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/save_files/3.rlg327" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/save_files/5.rlg327" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/save_files/7.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/save_files/0.rlg327" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/priorityQueue.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/monster.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/rlg327.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/dungeon.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/monster.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/utils.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/dungeon.c" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/utils.c" isTestSource="false" />
