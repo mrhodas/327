@@ -1,35 +1,27 @@
+# Gotten format from my Com S 327 class.
+
 CC = gcc
 CXX = g++
 ECHO = echo
 RM = rm -f
 
-CFLAGS = -Wall -ggdb -funroll-loops
-CXXFLAGS = -Wall -ggdb -funroll-loops
-<<<<<<< HEAD
+CFLAGS = -ggdb -funroll-loops
 LDFLAGS = 
-=======
-LDFLAGS = -lncurses
->>>>>>> afaa278bbb54864f37bfd875d2473e3eeeddab5d
 
-BIN = rlg327
-OBJS = rlg327.o dungeon.o heap.o utils.o path.o character.o pc.o npc.o \
-       move.o event.o
+BIN = testuthread
+OBJS = uthread.o main.o uthread_map.o uthread_queue.o thread.o
 
 all: $(BIN) etags
 
 $(BIN): $(OBJS)
 	@$(ECHO) Linking $@
-	@$(CC) $^ -o $@ $(LDFLAGS)
+	@$(CXX) $^ -o $@ $(LDFLAGS)
 
 -include $(OBJS:.o=.d)
 
 %.o: %.c
 	@$(ECHO) Compiling $<
 	@$(CC) $(CFLAGS) -MMD -MF $*.d -c $<
-
-%.o: %.cpp
-	@$(ECHO) Compiling $<
-	@$(CXX) $(CXXFLAGS) -MMD -MF $*.d -c $<
 
 .PHONY: all clean clobber etags
 
