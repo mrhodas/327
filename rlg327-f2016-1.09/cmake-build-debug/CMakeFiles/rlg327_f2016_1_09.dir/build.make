@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
+CMAKE_COMMAND = /cygdrive/c/Users/Michael/.CLion2016.3/system/cygwin_cmake/bin/cmake.exe
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
+RM = /cygdrive/c/Users/Michael/.CLion2016.3/system/cygwin_cmake/bin/cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09
+CMAKE_SOURCE_DIR = /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/rlg327_f2016_1_09.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/rlg327_f2016_1_09.dir/flags.make
 
 CMakeFiles/rlg327_f2016_1_09.dir/character.cpp.o: CMakeFiles/rlg327_f2016_1_09.dir/flags.make
 CMakeFiles/rlg327_f2016_1_09.dir/character.cpp.o: ../character.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/character.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/character.cpp.o -c /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/character.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/character.cpp.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/character.cpp.o -c /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/character.cpp
 
 CMakeFiles/rlg327_f2016_1_09.dir/character.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rlg327_f2016_1_09.dir/character.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/character.cpp > CMakeFiles/rlg327_f2016_1_09.dir/character.cpp.i
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/character.cpp > CMakeFiles/rlg327_f2016_1_09.dir/character.cpp.i
 
 CMakeFiles/rlg327_f2016_1_09.dir/character.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rlg327_f2016_1_09.dir/character.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/character.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/character.cpp.s
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/character.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/character.cpp.s
 
 CMakeFiles/rlg327_f2016_1_09.dir/character.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/rlg327_f2016_1_09.dir/character.cpp.o.provides.build: CMakeFiles/rlg3
 
 CMakeFiles/rlg327_f2016_1_09.dir/descriptions.cpp.o: CMakeFiles/rlg327_f2016_1_09.dir/flags.make
 CMakeFiles/rlg327_f2016_1_09.dir/descriptions.cpp.o: ../descriptions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/descriptions.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/descriptions.cpp.o -c /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/descriptions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/descriptions.cpp.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/descriptions.cpp.o -c /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/descriptions.cpp
 
 CMakeFiles/rlg327_f2016_1_09.dir/descriptions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rlg327_f2016_1_09.dir/descriptions.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/descriptions.cpp > CMakeFiles/rlg327_f2016_1_09.dir/descriptions.cpp.i
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/descriptions.cpp > CMakeFiles/rlg327_f2016_1_09.dir/descriptions.cpp.i
 
 CMakeFiles/rlg327_f2016_1_09.dir/descriptions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rlg327_f2016_1_09.dir/descriptions.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/descriptions.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/descriptions.cpp.s
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/descriptions.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/descriptions.cpp.s
 
 CMakeFiles/rlg327_f2016_1_09.dir/descriptions.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/rlg327_f2016_1_09.dir/descriptions.cpp.o.provides.build: CMakeFiles/r
 
 CMakeFiles/rlg327_f2016_1_09.dir/dice.cpp.o: CMakeFiles/rlg327_f2016_1_09.dir/flags.make
 CMakeFiles/rlg327_f2016_1_09.dir/dice.cpp.o: ../dice.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/dice.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/dice.cpp.o -c /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/dice.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/dice.cpp.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/dice.cpp.o -c /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/dice.cpp
 
 CMakeFiles/rlg327_f2016_1_09.dir/dice.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rlg327_f2016_1_09.dir/dice.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/dice.cpp > CMakeFiles/rlg327_f2016_1_09.dir/dice.cpp.i
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/dice.cpp > CMakeFiles/rlg327_f2016_1_09.dir/dice.cpp.i
 
 CMakeFiles/rlg327_f2016_1_09.dir/dice.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rlg327_f2016_1_09.dir/dice.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/dice.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/dice.cpp.s
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/dice.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/dice.cpp.s
 
 CMakeFiles/rlg327_f2016_1_09.dir/dice.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/rlg327_f2016_1_09.dir/dice.cpp.o.provides.build: CMakeFiles/rlg327_f2
 
 CMakeFiles/rlg327_f2016_1_09.dir/dungeon.cpp.o: CMakeFiles/rlg327_f2016_1_09.dir/flags.make
 CMakeFiles/rlg327_f2016_1_09.dir/dungeon.cpp.o: ../dungeon.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/dungeon.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/dungeon.cpp.o -c /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/dungeon.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/dungeon.cpp.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/dungeon.cpp.o -c /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/dungeon.cpp
 
 CMakeFiles/rlg327_f2016_1_09.dir/dungeon.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rlg327_f2016_1_09.dir/dungeon.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/dungeon.cpp > CMakeFiles/rlg327_f2016_1_09.dir/dungeon.cpp.i
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/dungeon.cpp > CMakeFiles/rlg327_f2016_1_09.dir/dungeon.cpp.i
 
 CMakeFiles/rlg327_f2016_1_09.dir/dungeon.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rlg327_f2016_1_09.dir/dungeon.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/dungeon.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/dungeon.cpp.s
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/dungeon.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/dungeon.cpp.s
 
 CMakeFiles/rlg327_f2016_1_09.dir/dungeon.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/rlg327_f2016_1_09.dir/dungeon.cpp.o.provides.build: CMakeFiles/rlg327
 
 CMakeFiles/rlg327_f2016_1_09.dir/event.cpp.o: CMakeFiles/rlg327_f2016_1_09.dir/flags.make
 CMakeFiles/rlg327_f2016_1_09.dir/event.cpp.o: ../event.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/event.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/event.cpp.o -c /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/event.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/event.cpp.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/event.cpp.o -c /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/event.cpp
 
 CMakeFiles/rlg327_f2016_1_09.dir/event.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rlg327_f2016_1_09.dir/event.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/event.cpp > CMakeFiles/rlg327_f2016_1_09.dir/event.cpp.i
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/event.cpp > CMakeFiles/rlg327_f2016_1_09.dir/event.cpp.i
 
 CMakeFiles/rlg327_f2016_1_09.dir/event.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rlg327_f2016_1_09.dir/event.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/event.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/event.cpp.s
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/event.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/event.cpp.s
 
 CMakeFiles/rlg327_f2016_1_09.dir/event.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/rlg327_f2016_1_09.dir/event.cpp.o.provides.build: CMakeFiles/rlg327_f
 
 CMakeFiles/rlg327_f2016_1_09.dir/heap.cpp.o: CMakeFiles/rlg327_f2016_1_09.dir/flags.make
 CMakeFiles/rlg327_f2016_1_09.dir/heap.cpp.o: ../heap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/heap.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/heap.cpp.o -c /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/heap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/heap.cpp.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/heap.cpp.o -c /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/heap.cpp
 
 CMakeFiles/rlg327_f2016_1_09.dir/heap.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rlg327_f2016_1_09.dir/heap.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/heap.cpp > CMakeFiles/rlg327_f2016_1_09.dir/heap.cpp.i
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/heap.cpp > CMakeFiles/rlg327_f2016_1_09.dir/heap.cpp.i
 
 CMakeFiles/rlg327_f2016_1_09.dir/heap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rlg327_f2016_1_09.dir/heap.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/heap.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/heap.cpp.s
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/heap.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/heap.cpp.s
 
 CMakeFiles/rlg327_f2016_1_09.dir/heap.cpp.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/rlg327_f2016_1_09.dir/heap.cpp.o.provides.build: CMakeFiles/rlg327_f2
 
 CMakeFiles/rlg327_f2016_1_09.dir/io.cpp.o: CMakeFiles/rlg327_f2016_1_09.dir/flags.make
 CMakeFiles/rlg327_f2016_1_09.dir/io.cpp.o: ../io.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/io.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/io.cpp.o -c /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/io.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/io.cpp.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/io.cpp.o -c /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/io.cpp
 
 CMakeFiles/rlg327_f2016_1_09.dir/io.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rlg327_f2016_1_09.dir/io.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/io.cpp > CMakeFiles/rlg327_f2016_1_09.dir/io.cpp.i
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/io.cpp > CMakeFiles/rlg327_f2016_1_09.dir/io.cpp.i
 
 CMakeFiles/rlg327_f2016_1_09.dir/io.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rlg327_f2016_1_09.dir/io.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/io.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/io.cpp.s
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/io.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/io.cpp.s
 
 CMakeFiles/rlg327_f2016_1_09.dir/io.cpp.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/rlg327_f2016_1_09.dir/io.cpp.o.provides.build: CMakeFiles/rlg327_f201
 
 CMakeFiles/rlg327_f2016_1_09.dir/main.cpp.o: CMakeFiles/rlg327_f2016_1_09.dir/flags.make
 CMakeFiles/rlg327_f2016_1_09.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/main.cpp.o -c /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/main.cpp.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/main.cpp.o -c /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/main.cpp
 
 CMakeFiles/rlg327_f2016_1_09.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rlg327_f2016_1_09.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/main.cpp > CMakeFiles/rlg327_f2016_1_09.dir/main.cpp.i
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/main.cpp > CMakeFiles/rlg327_f2016_1_09.dir/main.cpp.i
 
 CMakeFiles/rlg327_f2016_1_09.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rlg327_f2016_1_09.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/main.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/main.cpp.s
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/main.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/main.cpp.s
 
 CMakeFiles/rlg327_f2016_1_09.dir/main.cpp.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/rlg327_f2016_1_09.dir/main.cpp.o.provides.build: CMakeFiles/rlg327_f2
 
 CMakeFiles/rlg327_f2016_1_09.dir/move.cpp.o: CMakeFiles/rlg327_f2016_1_09.dir/flags.make
 CMakeFiles/rlg327_f2016_1_09.dir/move.cpp.o: ../move.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/move.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/move.cpp.o -c /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/move.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/move.cpp.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/move.cpp.o -c /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/move.cpp
 
 CMakeFiles/rlg327_f2016_1_09.dir/move.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rlg327_f2016_1_09.dir/move.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/move.cpp > CMakeFiles/rlg327_f2016_1_09.dir/move.cpp.i
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/move.cpp > CMakeFiles/rlg327_f2016_1_09.dir/move.cpp.i
 
 CMakeFiles/rlg327_f2016_1_09.dir/move.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rlg327_f2016_1_09.dir/move.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/move.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/move.cpp.s
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/move.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/move.cpp.s
 
 CMakeFiles/rlg327_f2016_1_09.dir/move.cpp.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/rlg327_f2016_1_09.dir/move.cpp.o.provides.build: CMakeFiles/rlg327_f2
 
 CMakeFiles/rlg327_f2016_1_09.dir/npc.cpp.o: CMakeFiles/rlg327_f2016_1_09.dir/flags.make
 CMakeFiles/rlg327_f2016_1_09.dir/npc.cpp.o: ../npc.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/npc.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/npc.cpp.o -c /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/npc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/npc.cpp.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/npc.cpp.o -c /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/npc.cpp
 
 CMakeFiles/rlg327_f2016_1_09.dir/npc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rlg327_f2016_1_09.dir/npc.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/npc.cpp > CMakeFiles/rlg327_f2016_1_09.dir/npc.cpp.i
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/npc.cpp > CMakeFiles/rlg327_f2016_1_09.dir/npc.cpp.i
 
 CMakeFiles/rlg327_f2016_1_09.dir/npc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rlg327_f2016_1_09.dir/npc.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/npc.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/npc.cpp.s
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/npc.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/npc.cpp.s
 
 CMakeFiles/rlg327_f2016_1_09.dir/npc.cpp.o.requires:
 
@@ -299,16 +299,16 @@ CMakeFiles/rlg327_f2016_1_09.dir/npc.cpp.o.provides.build: CMakeFiles/rlg327_f20
 
 CMakeFiles/rlg327_f2016_1_09.dir/object.cpp.o: CMakeFiles/rlg327_f2016_1_09.dir/flags.make
 CMakeFiles/rlg327_f2016_1_09.dir/object.cpp.o: ../object.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/object.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/object.cpp.o -c /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/object.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/object.cpp.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/object.cpp.o -c /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/object.cpp
 
 CMakeFiles/rlg327_f2016_1_09.dir/object.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rlg327_f2016_1_09.dir/object.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/object.cpp > CMakeFiles/rlg327_f2016_1_09.dir/object.cpp.i
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/object.cpp > CMakeFiles/rlg327_f2016_1_09.dir/object.cpp.i
 
 CMakeFiles/rlg327_f2016_1_09.dir/object.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rlg327_f2016_1_09.dir/object.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/object.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/object.cpp.s
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/object.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/object.cpp.s
 
 CMakeFiles/rlg327_f2016_1_09.dir/object.cpp.o.requires:
 
@@ -323,16 +323,16 @@ CMakeFiles/rlg327_f2016_1_09.dir/object.cpp.o.provides.build: CMakeFiles/rlg327_
 
 CMakeFiles/rlg327_f2016_1_09.dir/path.cpp.o: CMakeFiles/rlg327_f2016_1_09.dir/flags.make
 CMakeFiles/rlg327_f2016_1_09.dir/path.cpp.o: ../path.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/path.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/path.cpp.o -c /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/path.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/path.cpp.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/path.cpp.o -c /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/path.cpp
 
 CMakeFiles/rlg327_f2016_1_09.dir/path.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rlg327_f2016_1_09.dir/path.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/path.cpp > CMakeFiles/rlg327_f2016_1_09.dir/path.cpp.i
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/path.cpp > CMakeFiles/rlg327_f2016_1_09.dir/path.cpp.i
 
 CMakeFiles/rlg327_f2016_1_09.dir/path.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rlg327_f2016_1_09.dir/path.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/path.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/path.cpp.s
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/path.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/path.cpp.s
 
 CMakeFiles/rlg327_f2016_1_09.dir/path.cpp.o.requires:
 
@@ -347,16 +347,16 @@ CMakeFiles/rlg327_f2016_1_09.dir/path.cpp.o.provides.build: CMakeFiles/rlg327_f2
 
 CMakeFiles/rlg327_f2016_1_09.dir/pc.cpp.o: CMakeFiles/rlg327_f2016_1_09.dir/flags.make
 CMakeFiles/rlg327_f2016_1_09.dir/pc.cpp.o: ../pc.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/pc.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/pc.cpp.o -c /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/pc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/pc.cpp.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/pc.cpp.o -c /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/pc.cpp
 
 CMakeFiles/rlg327_f2016_1_09.dir/pc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rlg327_f2016_1_09.dir/pc.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/pc.cpp > CMakeFiles/rlg327_f2016_1_09.dir/pc.cpp.i
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/pc.cpp > CMakeFiles/rlg327_f2016_1_09.dir/pc.cpp.i
 
 CMakeFiles/rlg327_f2016_1_09.dir/pc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rlg327_f2016_1_09.dir/pc.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/pc.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/pc.cpp.s
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/pc.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/pc.cpp.s
 
 CMakeFiles/rlg327_f2016_1_09.dir/pc.cpp.o.requires:
 
@@ -371,16 +371,16 @@ CMakeFiles/rlg327_f2016_1_09.dir/pc.cpp.o.provides.build: CMakeFiles/rlg327_f201
 
 CMakeFiles/rlg327_f2016_1_09.dir/rlg327.cpp.o: CMakeFiles/rlg327_f2016_1_09.dir/flags.make
 CMakeFiles/rlg327_f2016_1_09.dir/rlg327.cpp.o: ../rlg327.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/rlg327.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/rlg327.cpp.o -c /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/rlg327.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/rlg327.cpp.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/rlg327.cpp.o -c /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/rlg327.cpp
 
 CMakeFiles/rlg327_f2016_1_09.dir/rlg327.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rlg327_f2016_1_09.dir/rlg327.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/rlg327.cpp > CMakeFiles/rlg327_f2016_1_09.dir/rlg327.cpp.i
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/rlg327.cpp > CMakeFiles/rlg327_f2016_1_09.dir/rlg327.cpp.i
 
 CMakeFiles/rlg327_f2016_1_09.dir/rlg327.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rlg327_f2016_1_09.dir/rlg327.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/rlg327.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/rlg327.cpp.s
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/rlg327.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/rlg327.cpp.s
 
 CMakeFiles/rlg327_f2016_1_09.dir/rlg327.cpp.o.requires:
 
@@ -395,16 +395,16 @@ CMakeFiles/rlg327_f2016_1_09.dir/rlg327.cpp.o.provides.build: CMakeFiles/rlg327_
 
 CMakeFiles/rlg327_f2016_1_09.dir/utils.cpp.o: CMakeFiles/rlg327_f2016_1_09.dir/flags.make
 CMakeFiles/rlg327_f2016_1_09.dir/utils.cpp.o: ../utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/utils.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/utils.cpp.o -c /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/rlg327_f2016_1_09.dir/utils.cpp.o"
+	/usr/bin/c++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rlg327_f2016_1_09.dir/utils.cpp.o -c /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/utils.cpp
 
 CMakeFiles/rlg327_f2016_1_09.dir/utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rlg327_f2016_1_09.dir/utils.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/utils.cpp > CMakeFiles/rlg327_f2016_1_09.dir/utils.cpp.i
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/utils.cpp > CMakeFiles/rlg327_f2016_1_09.dir/utils.cpp.i
 
 CMakeFiles/rlg327_f2016_1_09.dir/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rlg327_f2016_1_09.dir/utils.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/utils.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/utils.cpp.s
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/utils.cpp -o CMakeFiles/rlg327_f2016_1_09.dir/utils.cpp.s
 
 CMakeFiles/rlg327_f2016_1_09.dir/utils.cpp.o.requires:
 
@@ -438,28 +438,28 @@ rlg327_f2016_1_09_OBJECTS = \
 # External object files for target rlg327_f2016_1_09
 rlg327_f2016_1_09_EXTERNAL_OBJECTS =
 
-rlg327_f2016_1_09: CMakeFiles/rlg327_f2016_1_09.dir/character.cpp.o
-rlg327_f2016_1_09: CMakeFiles/rlg327_f2016_1_09.dir/descriptions.cpp.o
-rlg327_f2016_1_09: CMakeFiles/rlg327_f2016_1_09.dir/dice.cpp.o
-rlg327_f2016_1_09: CMakeFiles/rlg327_f2016_1_09.dir/dungeon.cpp.o
-rlg327_f2016_1_09: CMakeFiles/rlg327_f2016_1_09.dir/event.cpp.o
-rlg327_f2016_1_09: CMakeFiles/rlg327_f2016_1_09.dir/heap.cpp.o
-rlg327_f2016_1_09: CMakeFiles/rlg327_f2016_1_09.dir/io.cpp.o
-rlg327_f2016_1_09: CMakeFiles/rlg327_f2016_1_09.dir/main.cpp.o
-rlg327_f2016_1_09: CMakeFiles/rlg327_f2016_1_09.dir/move.cpp.o
-rlg327_f2016_1_09: CMakeFiles/rlg327_f2016_1_09.dir/npc.cpp.o
-rlg327_f2016_1_09: CMakeFiles/rlg327_f2016_1_09.dir/object.cpp.o
-rlg327_f2016_1_09: CMakeFiles/rlg327_f2016_1_09.dir/path.cpp.o
-rlg327_f2016_1_09: CMakeFiles/rlg327_f2016_1_09.dir/pc.cpp.o
-rlg327_f2016_1_09: CMakeFiles/rlg327_f2016_1_09.dir/rlg327.cpp.o
-rlg327_f2016_1_09: CMakeFiles/rlg327_f2016_1_09.dir/utils.cpp.o
-rlg327_f2016_1_09: CMakeFiles/rlg327_f2016_1_09.dir/build.make
-rlg327_f2016_1_09: CMakeFiles/rlg327_f2016_1_09.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable rlg327_f2016_1_09"
+rlg327_f2016_1_09.exe: CMakeFiles/rlg327_f2016_1_09.dir/character.cpp.o
+rlg327_f2016_1_09.exe: CMakeFiles/rlg327_f2016_1_09.dir/descriptions.cpp.o
+rlg327_f2016_1_09.exe: CMakeFiles/rlg327_f2016_1_09.dir/dice.cpp.o
+rlg327_f2016_1_09.exe: CMakeFiles/rlg327_f2016_1_09.dir/dungeon.cpp.o
+rlg327_f2016_1_09.exe: CMakeFiles/rlg327_f2016_1_09.dir/event.cpp.o
+rlg327_f2016_1_09.exe: CMakeFiles/rlg327_f2016_1_09.dir/heap.cpp.o
+rlg327_f2016_1_09.exe: CMakeFiles/rlg327_f2016_1_09.dir/io.cpp.o
+rlg327_f2016_1_09.exe: CMakeFiles/rlg327_f2016_1_09.dir/main.cpp.o
+rlg327_f2016_1_09.exe: CMakeFiles/rlg327_f2016_1_09.dir/move.cpp.o
+rlg327_f2016_1_09.exe: CMakeFiles/rlg327_f2016_1_09.dir/npc.cpp.o
+rlg327_f2016_1_09.exe: CMakeFiles/rlg327_f2016_1_09.dir/object.cpp.o
+rlg327_f2016_1_09.exe: CMakeFiles/rlg327_f2016_1_09.dir/path.cpp.o
+rlg327_f2016_1_09.exe: CMakeFiles/rlg327_f2016_1_09.dir/pc.cpp.o
+rlg327_f2016_1_09.exe: CMakeFiles/rlg327_f2016_1_09.dir/rlg327.cpp.o
+rlg327_f2016_1_09.exe: CMakeFiles/rlg327_f2016_1_09.dir/utils.cpp.o
+rlg327_f2016_1_09.exe: CMakeFiles/rlg327_f2016_1_09.dir/build.make
+rlg327_f2016_1_09.exe: CMakeFiles/rlg327_f2016_1_09.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable rlg327_f2016_1_09.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rlg327_f2016_1_09.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/rlg327_f2016_1_09.dir/build: rlg327_f2016_1_09
+CMakeFiles/rlg327_f2016_1_09.dir/build: rlg327_f2016_1_09.exe
 
 .PHONY : CMakeFiles/rlg327_f2016_1_09.dir/build
 
@@ -486,6 +486,6 @@ CMakeFiles/rlg327_f2016_1_09.dir/clean:
 .PHONY : CMakeFiles/rlg327_f2016_1_09.dir/clean
 
 CMakeFiles/rlg327_f2016_1_09.dir/depend:
-	cd /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09 /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09 /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug /Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles/rlg327_f2016_1_09.dir/DependInfo.cmake --color=$(COLOR)
+	cd /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09 /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09 /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug /cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/CMakeFiles/rlg327_f2016_1_09.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/rlg327_f2016_1_09.dir/depend
 

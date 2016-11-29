@@ -15,7 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/rlg327_f2016_1_09.dir/rlg327.cpp.o"
   "CMakeFiles/rlg327_f2016_1_09.dir/utils.cpp.o"
   "rlg327_f2016_1_09.pdb"
-  "rlg327_f2016_1_09"
+  "rlg327_f2016_1_09.exe"
+  "librlg327_f2016_1_09.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

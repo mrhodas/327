@@ -8,183 +8,219 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rlg327_f2016_1_09">
-				<Option output="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/rlg327_f2016_1_09" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/rlg327_f2016_1_09.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.3.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include-fixed"/>
 					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/../../../../lib/../include/w32api"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 rlg327_f2016_1_09"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 rlg327_f2016_1_09"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rlg327_f2016_1_09/fast">
-				<Option output="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/rlg327_f2016_1_09" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/rlg327_f2016_1_09.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../lib/clang/7.3.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include-fixed"/>
 					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/../../../../lib/../include/w32api"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/4.9.3/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 rlg327_f2016_1_09/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 rlg327_f2016_1_09/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j8 -f &quot;/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/Makefile">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/character.cpp">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/character.cpp">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/character.h">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/character.h">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/data_files/monster_desc.txt">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/data_files/monster_desc.txt">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/data_files/object_desc.txt">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/data_files/object_desc.txt">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/descriptions.cpp">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/descriptions.cpp">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/descriptions.h">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/descriptions.h">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/dice.cpp">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/dice.cpp">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/dice.h">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/dice.h">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/dims.h">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/dims.h">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/dungeon.cpp">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/dungeon.cpp">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/dungeon.h">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/dungeon.h">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/event.cpp">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/event.cpp">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/event.h">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/event.h">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/heap.cpp">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/heap.cpp">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/heap.h">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/heap.h">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/io.cpp">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/io.cpp">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/io.h">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/io.h">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/macros.h">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/macros.h">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/main.cpp">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/main.cpp">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/move.cpp">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/move.cpp">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/move.h">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/move.h">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/npc.cpp">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/npc.cpp">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/npc.h">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/npc.h">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/object.cpp">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/object.cpp">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/object.h">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/object.h">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/path.cpp">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/path.cpp">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/path.h">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/path.h">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/pc.cpp">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/pc.cpp">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/pc.h">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/pc.h">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/rlg327.cpp">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/rlg327.cpp">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/save_files/0.rlg327">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/save_files/io.h">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/save_files/1.rlg327">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/utils.cpp">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/save_files/2.rlg327">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/utils.h">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/save_files/3.rlg327">
 			<Option target="rlg327_f2016_1_09"/>
 		</Unit>
-		<Unit filename="/Users/mrhodas/sourceTree/327/rlg327-f2016-1.09/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/save_files/4.rlg327">
+			<Option target="rlg327_f2016_1_09"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/save_files/5.rlg327">
+			<Option target="rlg327_f2016_1_09"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/save_files/6.rlg327">
+			<Option target="rlg327_f2016_1_09"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/save_files/7.rlg327">
+			<Option target="rlg327_f2016_1_09"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/save_files/8.rlg327">
+			<Option target="rlg327_f2016_1_09"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/save_files/9.rlg327">
+			<Option target="rlg327_f2016_1_09"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/save_files/hello.rlg327">
+			<Option target="rlg327_f2016_1_09"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/save_files/io.h">
+			<Option target="rlg327_f2016_1_09"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/save_files/smile.rlg327">
+			<Option target="rlg327_f2016_1_09"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/save_files/welldone.rlg327">
+			<Option target="rlg327_f2016_1_09"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/utils.cpp">
+			<Option target="rlg327_f2016_1_09"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/utils.h">
+			<Option target="rlg327_f2016_1_09"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Michael/sourceTree/327/rlg327-f2016-1.09/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

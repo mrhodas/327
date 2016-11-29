@@ -1,0 +1,36 @@
+Assignment # 7 - 11/02/16
+-Cenverted to all .cpp extensions
+-Parse input file
+
+Assignment # 6 - 10/26/16
+-Added fog
+-This version shows attemp to convert to cpp
+
+Assignment #5 - 10/19/16
+-Converted to ncurses
+-Added movement
+-Added stairs
+-Added PC movenment
+-Added Quit
+-Added bounds to the PC
+-Added Debug text up top and filled in the bopttom two for now.
+-Added < and >
+-Added monster menu
+-Can escape from monster menu, but the scrolling is not working, i have it implemented though.
+
+Assignment #4 - 10/5/16
+-I have made a monster type that uses a monster list that fills itself with randomly generated monsters
+defined by the user.  Otherwise the default monster number is 3.
+UPDATE:
+-Rendering loop working
+-Queue is not working.
+
+Assignment #3 - 9/14/16
+-Construct a graph with weighted edges
+-Did not finish shortest path with Floyd Warshall
+
+Assignment #2 - 9/14/16
+-Working on saving dungeon.
+
+Assignment #1 - 9/7/16
+-Made dungeon generator that connects by corners.
